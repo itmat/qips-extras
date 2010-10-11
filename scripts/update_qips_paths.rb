@@ -25,7 +25,7 @@ class PathUpdater
   DEBUG = false # set to true for verbose output
   ABS_PATH_MATCH = '/tmp/scratch'
   URL_PATH_MATCH = '/tmp/scratch'
-  SCHEMA_PATH_MATCH = '/usr/local/apps/tpp/schema'
+  SCHEMA_PATH_MATCH = '/opt/tpp/schema'
   DB_PATH_MATCH = '/tmp/scratch'
   BIN_PATH_MATCH = '/tpp/cgi-bin'
 

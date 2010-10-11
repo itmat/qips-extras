@@ -13,7 +13,7 @@ require 'optparse'
 require 'json' 
 
 #command to execute
-CMD = '/usr/local/apps/tpp/bin/msconvert'
+CMD = '/opt/tpp/bin/msconvert'
 
 #holder for stdout from exec
 out = ''

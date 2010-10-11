@@ -21,7 +21,7 @@ require 'json'
 require 'erubis'
 
 #command to execute
-CMD = '/usr/local/apps/tpp/bin/tandem.exe'
+CMD = '/opt/tpp/bin/tandem.exe'
 INPUT_XML_FILE = 'input.xml'
 
 #holder for stdout from exec
