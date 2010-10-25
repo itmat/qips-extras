@@ -61,8 +61,11 @@ begin
   #options[:input_files].split(',').each do |f|
     #each basename
     
+    unique_id = Time.now.to_i.to_s
+    filename = "ec2_diag-" + unique_id + ".out"
     out += "Processing #{CMD}...\n"
-    outputs << `#{CMD}`
+    out += `#{CMD} >> #{filename}`
+    outputs << "#{filename}"
     error += "error code: #{$?} \n" unless $?.to_i == 0 # $? is a special var for error code of process
     # error = "FORCED ERROR" if rand(2) == 1 # uncomment to force an error half the time
 
